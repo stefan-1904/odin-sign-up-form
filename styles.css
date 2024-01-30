@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "norseBold";
+    src: url('./fonts/norse-bold.woff') format('woff'),
+         url('./fonts/norse-bold.woff2') format('woff2');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.media-container {
+    height: 100vh;
+    width: 35vw;
+}
+
+.media-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
