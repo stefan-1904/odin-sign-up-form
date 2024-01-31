@@ -76,7 +76,7 @@ body, html {
 
 .title-card-container {
     margin: 5vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
     margin-right: 15vw;
     font-family: sans-serif;
     font-size: 1.3vw;
@@ -130,9 +130,21 @@ label {
     letter-spacing: 0.12rem;
 }
 
+input:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.3);
+}
+
 input {
-    border-color: #E5E7EB;
-    border-radius: 5px;
+    border: 0;
+    outline: 1px solid #E5E7EB;
+}
+
+input:focus {
+    outline: 1px solid #7F9BE8;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.3);
 }
 
 .account-create-container {
@@ -152,6 +164,12 @@ input {
     padding-left: 3%;
     padding-right: 3%;
     cursor: pointer;
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.61);
+}
+
+.account-create-btn:hover {
+    transform: scale(1.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .login-click {
