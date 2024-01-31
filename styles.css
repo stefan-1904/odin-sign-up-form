@@ -141,6 +141,7 @@ input:hover {
 input {
     border: 0;
     outline: 1px solid #E5E7EB;
+    height: 60%;
 }
 
 input:focus {
@@ -179,6 +180,7 @@ input:focus {
     cursor: pointer;
 }
 
-.error:invalid {
-    outline-color: red;
+.password-match-validation {
+    font-family: sans-serif;
+    color: #B91C1C;
 }
