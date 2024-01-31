@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -22,17 +23,17 @@
                             <div class="input-pair">
                                 <div class="input-container">
                                     <label for="firstName">FIRST NAME</label></br>
-                                    <input type="text" name="firstName" id="firstName" required></br>
+                                    <input type="text" name="firstName" id="firstName"></br>
                                 </div>
                                 <div class="input-container">
                                     <label for="lastName">LAST NAME</label></br>
-                                    <input type="text" name="lastName" id="lastName" required></br>
+                                    <input type="text" name="lastName" id="lastName"></br>
                                 </div>
                             </div>
                             <div class="input-pair">
                                 <div class="input-container">
                                     <label for="email">EMAIL</label></br>
-                                    <input type="email" name="email" id="email" required></br>
+                                    <input type="email" name="email" id="email"></br>
                                 </div>
                                 <div class="input-container">
                                     <label for="telNum">PHONE NUMBER</label></br>
@@ -42,11 +43,12 @@
                             <div class="input-pair">
                                 <div class="input-container error">
                                     <label for="password">PASSWORD</label></br>
-                                    <input type="password" name="password" id="password" required></br>
+                                    <input type="password" name="password" id="password" onchange="passwordMatch();"></br>
+                                    <small class="password-match-validation" id="passwordValidation" hidden>* Passwords don't match</small>
                                 </div>
                                 <div class="input-container error">
                                     <label for="confirmPassword">CONFIRM PASSWORD</label></br>
-                                    <input type="password" name="confirmPassword" id="confirmPassword" required></br>
+                                    <input type="password" name="confirmPassword" id="confirmPassword" onchange="passwordMatch();"></br>
                                 </div>
                             </div>
                         </div>
