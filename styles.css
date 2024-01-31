@@ -8,15 +8,45 @@ body, html {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #F9FAFB;    
 }
 
 * {
     box-sizing: border-box;
 }
 
+/* CSS FOR LEFT-SIDE IMAGE AND CHILDREN */
+
 .media-container {
+    position: relative;
     height: 100vh;
     width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-div-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 20vh;
+    height: 20vh;
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image-overlay-text {
+    color: white;
+    font-family: "norseBold";
+    font-size: 7vw;
+}
+
+.image-overlay-logo {
+    max-width: 20%;
 }
 
 .media-image {
@@ -24,3 +54,18 @@ body, html {
     height: 100%;
     object-fit: cover;
 }
+
+.credit-footer, a:hover, a:active, a:visited {
+    color: white;
+    font-size: 0.8vw;
+}
+
+.credit-container {
+    position: absolute;
+    margin: 1vh;
+    bottom: 0;
+}
+
+/* CSS FOR FORM AND SIBLINGS */
+
+.content-container
