@@ -7,16 +7,63 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <section class="content-container"></section>
-    <section class="media-container">
-        <div class="image-div-overlay">
-            <img src="./design/odin-sidebar.png" alt="Logo of The Odin Project" class="image-overlay-logo">
-            <p class="image-overlay-text">ODIN</p>
-        </div>
-        <img src="./design/leaf-img.avif" alt="Background image of palm leaves" class="media-image">
-        <div class="credit-container">
-            <small class="credit-footer">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></small>
-        </div>
-    </section>
+    <main class="page-container">
+        <section class="content-container">
+            <div class="title-card-container">
+                <p class="title-card-1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p class="title-card-2">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <form >
+                    <fieldset>
+                        <span><legend class="form-legend">Let's do this!</legend></span>
+                        <br>
+                        <div class="form-inputs">
+                            <div class="input-pair">
+                                <div class="input-container">
+                                    <label for="firstName">FIRST NAME</label></br>
+                                    <input type="text" name="firstName" id="firstName"></br>
+                                </div>
+                                <div class="input-container">
+                                    <label for="lastName">LAST NAME</label></br>
+                                    <input type="text" name="lastName" id="lastName"></br>
+                                </div>
+                            </div>
+                            <div class="input-pair">
+                                <div class="input-container">
+                                    <label for="email">EMAIL</label></br>
+                                    <input type="email" name="email" id="email"></br>
+                                </div>
+                                <div class="input-container">
+                                    <label for="telNum">PHONE NUMBER</label></br>
+                                    <input type="tel" name="telNum" id="telNum"></br>
+                                </div>
+                            </div>
+                            <div class="input-pair">
+                                <div class="input-container error">
+                                    <label for="password">PASSWORD</label></br>
+                                    <input type="password" name="password" id="password"></br>
+                                </div>
+                                <div class="input-container error">
+                                    <label for="confirmPassword">CONFIRM PASSWORD</label></br>
+                                    <input type="password" name="confirmPassword" id="confirmPassword"></br>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="media-container">
+            <div class="image-div-overlay">
+                <img src="./design/odin-sidebar.png" alt="Logo of The Odin Project" class="image-overlay-logo">
+                <p class="image-overlay-text">ODIN</p>
+            </div>
+            <img src="./design/leaf-img.avif" alt="Background image of palm leaves" class="media-image">
+            <div class="credit-container">
+                <small class="credit-footer">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></small>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
